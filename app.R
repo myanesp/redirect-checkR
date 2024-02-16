@@ -14,7 +14,9 @@ ui <- fluidPage(
      to know the servers you're going through", align = "center"),
   textInput("urlInput", "Enter URL", value = "", placeholder = "google.es"),
   actionButton("submitButton", "Submit"),
-  verbatimTextOutput("resultOutput")
+  verbatimTextOutput("resultOutput"),
+  h5("Made by ", a("Mario Yanes", href = "https://github.com/myanesp"), align = "center"),
+  h5(a("Source code", href = "https://github.com/myanesp/redirect-checkR"), icon("github", lib = "font-awesome"), align = "center")
 )
 
 server <- function(input, output) {
