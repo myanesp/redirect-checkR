@@ -1,0 +1,9 @@
+version: "3"
+services:
+  redirect-checkR:
+    build: .
+    container_name: redirect-checkR
+    restart: always
+    ports:
+      - "3838:3838"
+
